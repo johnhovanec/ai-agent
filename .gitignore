@@ -1,5 +1,13 @@
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
+# Secrets file
+
+.secrets
+
+# Environment files
+
+.env
+
 # Logs
 
 logs
@@ -10,7 +18,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Caches 
+# Caches
 
 .cache
 
@@ -175,4 +183,4 @@ dist
 .DS_Store
 .env
 
-db.json 
+db.json
