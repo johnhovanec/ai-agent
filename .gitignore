@@ -4,10 +4,6 @@
 
 .secrets
 
-# Environment files
-
-.env
-
 # Logs
 
 logs
