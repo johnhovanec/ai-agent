@@ -7,42 +7,6 @@
     {
       "role": "assistant",
       "content": "Hi John, today is October 14, 1967"
-    },
-    {
-      "role": "user",
-      "content": "I love the color yellow",
-      "id": "4ed70d65-19e2-4105-9743-3e796bcd74df",
-      "createdAt": "2025-08-27T01:37:33.608Z"
-    },
-    {
-      "role": "assistant",
-      "content": "That's great! Yellow is such a bright and cheerful color. It often symbolizes happiness, optimism, and energy. Do you have a favorite yellow item or something yellow that you particularly enjoy?",
-      "id": "3c86c16e-01f1-423e-a195-cadcc3c2980b",
-      "createdAt": "2025-08-27T01:37:35.735Z"
-    },
-    {
-      "role": "user",
-      "content": "What is my favorite color?",
-      "id": "9ff3fa12-41e6-4baa-a72b-541348abda26",
-      "createdAt": "2025-08-27T01:38:09.190Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Your favorite color is yellow! If you have any specific questions or topics related to yellow or anything else, feel free to share!",
-      "id": "fda16461-564d-4d95-9836-42ea8147e3b0",
-      "createdAt": "2025-08-27T01:38:10.967Z"
-    },
-    {
-      "role": "user",
-      "content": "Come up with a metal band name that includes today's date and my favorite color",
-      "id": "7970a54a-a191-47f4-83c6-7379cf2d36b0",
-      "createdAt": "2025-08-27T01:38:49.874Z"
-    },
-    {
-      "role": "assistant",
-      "content": "How about \"Yellow October 14th\"? It combines your favorite color with today's date, giving it a unique and memorable twist for a metal band name! If you want something a bit more intense, you could try \"Yellow Abyss: October 14th.\" Let me know if you'd like more options!",
-      "id": "d75558cf-e0a3-4a9c-9d80-cba49361afc9",
-      "createdAt": "2025-08-27T01:38:52.541Z"
     }
   ]
 }
