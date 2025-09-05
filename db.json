@@ -2,26 +2,15 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "9b6e5ffd-56da-4042-a503-d292cd79d093",
-      "createdAt": "2024-11-05T19:34:16.767Z"
+      "content": "What is the weather?",
+      "id": "3f069c14-19d2-43de-b95b-71a125902f88",
+      "createdAt": "2025-09-04T02:07:41.437Z"
     },
     {
-      "role": "assistant",
-      "content": null,
-      "tool_calls": [
-        {
-          "id": "call_Pd2L6OWnviQmRf7RicWtvE6Y",
-          "type": "function",
-          "function": {
-            "name": "get_stuff",
-            "arguments": "{\"reasoning\":\"To provide accurate weather information.\"}"
-          }
-        }
-      ],
-      "refusal": null,
-      "id": "7c3e8fdd-f7f8-4103-9ac4-a361671aca41",
-      "createdAt": "2024-11-05T19:34:17.996Z"
+      "role": "user",
+      "content": "What is the weather in MD?",
+      "id": "8e019dfd-d07c-4a18-af3c-098202f961a3",
+      "createdAt": "2025-09-04T02:09:26.405Z"
     }
   ]
 }
