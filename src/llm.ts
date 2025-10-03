@@ -1,31 +1,21 @@
-import { zodFunction } from 'openai/helpers/zod'
-import { z } from 'zod'
 import type { AIMessage } from '../types'
 import { openai } from './ai'
+import { zodFunction } from 'openai/helpers/zod'
 import { systemPrompt } from './systemPrompt'
 
 export const runLLM = async ({
-  model = 'gpt-4o-mini',
   messages,
-  temperature = 0.1,
   tools,
 }: {
   messages: AIMessage[]
-  temperature?: number
-  model?: string
-  tools?: { name: string; parameters: z.AnyZodObject }[]
+  tools: any[]
 }) => {
-  const formattedTools = tools?.map((tool) => zodFunction(tool))
+  const formattedTools = tools.map(zodFunction)
+
   const response = await openai.chat.completions.create({
-    model,
-    messages: [
-      {
-        role: 'system',
-        content: systemPrompt,
-      },
-      ...messages,
-    ],
-    temperature,
+    model: 'gpt-4o-mini',
+    temperature: 0.1,
+    messages: [{role: 'system', content: systemPrompt}, ...messages], // Messages should be saved to the db, the prompt should not be since it changes so much.
     tools: formattedTools,
     tool_choice: 'auto',
     parallel_tool_calls: false,

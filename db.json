@@ -1,3 +1,54 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "my name is scott",
+      "id": "27d1e15d-15ff-44a3-af2e-daae1190e216",
+      "createdAt": "2024-11-05T20:42:53.667Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Scott! How can I assist you today?",
+      "refusal": null,
+      "id": "7ba683d3-0160-4d12-bd19-74b5598bd049",
+      "createdAt": "2024-11-05T20:42:54.208Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather in in mexico city",
+      "id": "e76aafe3-903f-4c0e-8ad3-c6ebc4111ad3",
+      "createdAt": "2024-11-05T20:43:04.149Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_PE4XnGL48FBz7y47OM63eBtY",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User asked for the current weather in Mexico City.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "02bb2468-fb05-49ac-9455-20aa9cf1cb15",
+      "createdAt": "2024-11-05T20:43:04.908Z"
+    },
+    {
+      "role": "tool",
+      "content": "hot, 90deg",
+      "tool_call_id": "call_PE4XnGL48FBz7y47OM63eBtY",
+      "id": "954a14e2-f21f-4e6b-9471-df6c3cc8fc68",
+      "createdAt": "2024-11-05T20:43:04.912Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather in Mexico City is hot, with a temperature of 90°F. If you need more details or have any other questions, feel free to ask!",
+      "refusal": null,
+      "id": "1dedbb35-8a0c-41d3-97ad-e63f4edfb9eb",
+      "createdAt": "2024-11-05T20:43:05.822Z"
+    }
+  ]
 }
