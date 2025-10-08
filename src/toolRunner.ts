@@ -4,6 +4,7 @@ import { reddit, redditToolDefinition } from './tools/reddit';
 import { dadJoke, dadJokeToolDefinition } from './tools/dadJokes';
 import { nytArticleSearch, nytArticleSearchToolDefinition } from './tools/nytArticleSearch';
 import { dataSummary, dataSummaryToolDefinition } from './tools/dataSummary';
+import { generateChart, generateChartToolDefinition } from './tools/generateChart';
 
 export const runTool = async (
   toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
@@ -25,6 +26,8 @@ export const runTool = async (
         return nytArticleSearch(input)
     case dataSummaryToolDefinition.name:
         return dataSummary(input)
+    case generateChartToolDefinition.name:
+        return generateChart(input)
     default:
       throw new Error(`Unknown tool: ${toolCall.function.name}`)
   }
