@@ -3,6 +3,7 @@ import { generateImage, generateImageToolDefinition } from './tools/generateImag
 import { reddit, redditToolDefinition } from './tools/reddit';
 import { dadJoke, dadJokeToolDefinition } from './tools/dadJokes';
 import { nytArticleSearch, nytArticleSearchToolDefinition } from './tools/nytArticleSearch';
+import { dataSummary, dataSummaryToolDefinition } from './tools/dataSummary';
 
 export const runTool = async (
   toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
@@ -22,6 +23,8 @@ export const runTool = async (
         return dadJoke(input)
     case nytArticleSearchToolDefinition.name:
         return nytArticleSearch(input)
+    case dataSummaryToolDefinition.name:
+        return dataSummary(input)
     default:
       throw new Error(`Unknown tool: ${toolCall.function.name}`)
   }

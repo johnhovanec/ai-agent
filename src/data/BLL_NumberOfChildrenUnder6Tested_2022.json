@@ -1,0 +1,202 @@
+[
+    {
+        "id": "C92A594F-DD9D-4360-B52C-19D21DD57E8D",
+        "yearsend": 2022,
+        "jurisdiction": "Allegany",
+        "total": 1021,
+        "from0toless3": 886,
+        "from3toless6": 135
+    },
+    {
+        "id": "DEF09264-762F-4D28-8C7C-4D35923A9928",
+        "yearsend": 2022,
+        "jurisdiction": "Anne Arundel",
+        "total": 11218,
+        "from0toless3": 9163,
+        "from3toless6": 2055
+    },
+    {
+        "id": "F86442C7-8EDF-4465-BC16-9ED30EE0E347",
+        "yearsend": 2022,
+        "jurisdiction": "Baltimore City",
+        "total": 10775,
+        "from0toless3": 8238,
+        "from3toless6": 2537
+    },
+    {
+        "id": "CBBBCA31-C345-4FF0-BA8A-3A8DB995FBA7",
+        "yearsend": 2022,
+        "jurisdiction": "Baltimore County",
+        "total": 15667,
+        "from0toless3": 12752,
+        "from3toless6": 2915
+    },
+    {
+        "id": "3A8345E9-5569-44A3-B384-B5F447CD99FD",
+        "yearsend": 2022,
+        "jurisdiction": "Calvert",
+        "total": 1195,
+        "from0toless3": 873,
+        "from3toless6": 322
+    },
+    {
+        "id": "FFABF102-A359-4B2F-A318-F2022D92FF0D",
+        "yearsend": 2022,
+        "jurisdiction": "Caroline",
+        "total": 544,
+        "from0toless3": 449,
+        "from3toless6": 95
+    },
+    {
+        "id": "63EFC4F9-E127-47C5-92E2-2B4B1E042C09",
+        "yearsend": 2022,
+        "jurisdiction": "Carroll",
+        "total": 2909,
+        "from0toless3": 2531,
+        "from3toless6": 378
+    },
+    {
+        "id": "5FF9E1C4-B0FA-419A-90BC-68F8A57C09ED",
+        "yearsend": 2022,
+        "jurisdiction": "Cecil",
+        "total": 1437,
+        "from0toless3": 1185,
+        "from3toless6": 252
+    },
+    {
+        "id": "E254F665-B278-4B80-92FF-2BF3BA97DA11",
+        "yearsend": 2022,
+        "jurisdiction": "Charles",
+        "total": 2767,
+        "from0toless3": 2107,
+        "from3toless6": 660
+    },
+    {
+        "id": "1F9D3F0C-5748-492A-8B4E-5B4C242DE003",
+        "yearsend": 2022,
+        "jurisdiction": "Dorchester",
+        "total": 459,
+        "from0toless3": 346,
+        "from3toless6": 113
+    },
+    {
+        "id": "B60EEC62-C0EB-41F3-961D-E061BF85218E",
+        "yearsend": 2022,
+        "jurisdiction": "Frederick",
+        "total": 5046,
+        "from0toless3": 4312,
+        "from3toless6": 734
+    },
+    {
+        "id": "35DE1B6C-5591-4562-A73F-CB786CD296F4",
+        "yearsend": 2022,
+        "jurisdiction": "Garrett",
+        "total": 314,
+        "from0toless3": 240,
+        "from3toless6": 74
+    },
+    {
+        "id": "1BCEF5BD-88E7-4BB5-8A12-5FBC0E2D688A",
+        "yearsend": 2022,
+        "jurisdiction": "Harford",
+        "total": 4497,
+        "from0toless3": 3711,
+        "from3toless6": 786
+    },
+    {
+        "id": "C60FE8C8-C6D6-4545-8D75-46A411FCE0BB",
+        "yearsend": 2022,
+        "jurisdiction": "Howard",
+        "total": 4495,
+        "from0toless3": 3520,
+        "from3toless6": 975
+    },
+    {
+        "id": "EC8808CC-F4A8-4FE7-8D7E-8B7AF1643AAC",
+        "yearsend": 2022,
+        "jurisdiction": "Kent",
+        "total": 180,
+        "from0toless3": 147,
+        "from3toless6": 33
+    },
+    {
+        "id": "0AC556FC-D823-4B5B-8024-67462F855E47",
+        "yearsend": 2022,
+        "jurisdiction": "Montgomery",
+        "total": 22544,
+        "from0toless3": 17972,
+        "from3toless6": 4572
+    },
+    {
+        "id": "64608B6A-42E5-4498-8468-901ECBE7925B",
+        "yearsend": 2022,
+        "jurisdiction": "Prince George's",
+        "total": 18540,
+        "from0toless3": 13064,
+        "from3toless6": 5476
+    },
+    {
+        "id": "1643A226-BFC6-496F-BA79-18569B69EA9E",
+        "yearsend": 2022,
+        "jurisdiction": "Queen Anne's",
+        "total": 833,
+        "from0toless3": 743,
+        "from3toless6": 90
+    },
+    {
+        "id": "8C10A947-9EA3-4AF8-8077-B21CA9B04334",
+        "yearsend": 2022,
+        "jurisdiction": "Somerset",
+        "total": 382,
+        "from0toless3": 297,
+        "from3toless6": 85
+    },
+    {
+        "id": "1B6366A3-6594-4355-BCA0-4D7F0F6C96E3",
+        "yearsend": 2022,
+        "jurisdiction": "St. Mary's",
+        "total": 2051,
+        "from0toless3": 1512,
+        "from3toless6": 539
+    },
+    {
+        "id": "2716959F-CF94-40CF-84F2-A9D6CF4A7274",
+        "yearsend": 2022,
+        "jurisdiction": "Statewide",
+        "total": 112143,
+        "from0toless3": 88205,
+        "from3toless6": 23938
+    },
+    {
+        "id": "58786736-C948-4542-9673-D368D2918245",
+        "yearsend": 2022,
+        "jurisdiction": "Talbot",
+        "total": 392,
+        "from0toless3": 306,
+        "from3toless6": 86
+    },
+    {
+        "id": "102C3BBB-0469-4637-8D6C-030394834DCE",
+        "yearsend": 2022,
+        "jurisdiction": "Washington",
+        "total": 2263,
+        "from0toless3": 1656,
+        "from3toless6": 607
+    },
+    {
+        "id": "739864CE-A48C-4755-B440-008618DF360C",
+        "yearsend": 2022,
+        "jurisdiction": "Wicomico",
+        "total": 1847,
+        "from0toless3": 1523,
+        "from3toless6": 324
+    },
+    {
+        "id": "88C8A1C1-6308-42B6-B40C-23D89E9EEF52",
+        "yearsend": 2022,
+        "jurisdiction": "Worcester",
+        "total": 767,
+        "from0toless3": 672,
+        "from3toless6": 95
+    }
+]
