@@ -16,5 +16,8 @@ type Args = z.infer<typeof dataSummaryToolDefinition.parameters>;
 export const dataSummary: ToolFn<Args, string> = async ({ toolArgs }) => {
     const data = [...data2022, ...data2023];
     const summaryPrompt = `Summarize this JSON data about the numbers of children under age 6 tested for elevated blood lead levels: ${JSON.stringify(data)}`
-    return JSON.stringify(summaryPrompt, null, 2); // Formatting json to the llm helps improve how it reads the json
+
+    // Return both the prompt and the raw data as a JSON string so callers (and tools)
+    // receive the generated prompt along with the original data object.
+    return JSON.stringify({ summaryPrompt, data }, null, 2)
 }

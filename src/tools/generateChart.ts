@@ -9,7 +9,7 @@ export const generateChartToolDefinition = {
     prompt: z
       .string()
       .describe(
-        'The prompt to use to generate the chart based on the input provided'
+        'The prompt to use to generate the chart using code interpreter tool'
       ),
   }),
   description: 'generates a chart',
@@ -31,7 +31,7 @@ export const generateChart: ToolFn<Args, string> = async ({
     instructions: `
         You are a data visualization assistant.
         The user will provide data in their message.
-        Use the Code Interpreter tool to generate a chart (PNG) based on the user's request.
+        Use the Code Interpreter tool to generate a chart in png format based on the user's request.
         Return the image file to the user.`,
     model: 'gpt-4o-mini',
     tools: [{ type: 'code_interpreter' }],
@@ -53,13 +53,32 @@ export const generateChart: ToolFn<Args, string> = async ({
     JSON.stringify({ role: 'user', content: cleanPrompt }, null, 2)
   )
 
+  // If the prompt is a JSON string produced by dataSummary, extract the generated
+  // summaryPrompt and the raw data so we can send both to the assistant.
+  let promptText = cleanPrompt
+  let dataObj: any = null
+  try {
+    const parsed = JSON.parse(cleanPrompt)
+    if (parsed && typeof parsed === 'object' && 'summaryPrompt' in parsed) {
+      promptText = String(parsed.summaryPrompt)
+      dataObj = parsed.data
+    }
+  } catch (e) {
+    // not JSON
+    console.log('\n\nNot JSON')
+  }
+
+  const userContent = dataObj
+    ? `${promptText}\n\nData:\n${JSON.stringify(dataObj)}`
+    : promptText
+
   // Create a new thread
   const thread = await openai.beta.threads.create()
 
-  // Add message to the thread
+  // Add message to the thread. Use userContent which may include data extracted from dataSummary
   await openai.beta.threads.messages.create(thread.id, {
     role: 'user',
-    content: cleanPrompt,
+    content: userContent,
   })
 
   console.log('\n\nThread created: ', thread.id)
@@ -93,7 +112,8 @@ export const generateChart: ToolFn<Args, string> = async ({
   const imageContent = allContent.find((c) => c.type === 'image_file')
 
   if (!imageContent) {
-    // No image — return the assistant's full content as a string so it's saved and can be inspected
+    // No image — return the assistant's full content as a string so it's saved and can be inspected.
+    // Note: this image generation fails randomly, need to review if there are better api options to use here.
     console.error(
       'No image file found! Returning assistant content for inspection.'
     )
